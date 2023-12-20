@@ -1,0 +1,17 @@
+
+
+.colored-img {
+    display: none;
+}
+
+.project-card:hover .discolored-img {
+    display: none;
+}
+
+.project-card:hover .colored-img {
+    display: block;
+}
+
+.rounded-20 {
+    border-radius: 20px;
+}
