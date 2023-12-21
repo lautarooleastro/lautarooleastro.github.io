@@ -16,9 +16,9 @@
 <body>
     <!-- Home section start -->
     <section id="home" class="home bg-light">
-        <div class="container-lg min-vh-100">
+        <div class="container min-vh-100">
             <div class="row align-items-center">
-                <div class="col-md-6 order-md-first pb-5 pb-md-0">
+                <div class="col-12 col-md-6 order-md-first pb-5 pb-md-0">
                     <div class="home-text">
                         <h5 class="fs-5 my-1 text-muted">Hello I'm</h5>
                         <h1 class="fs-1 my-1 text-uppercase">Lautaro Oleastro</h1>
@@ -26,9 +26,9 @@
                         <p>Based in Buenos Aires, Argentina. Passionate about technology from an early age, later graduated in the field of computer science. I am a flexible developer looking to improve my skills day by day, project by project.</p>
                     </div>
                 </div>
-                <div class="col-md-6 order-first p-5">
-                    <div class="home-img text-center">
-                        <img src="img/profile.jpg" class="rounded-circle mw-100" alt="profile picture">
+                <div class="col-12 col-md-6 order-first p-5">
+                    <div class="home-img text-center p-lg-5">
+                        <img src="img/profile-2.png" class="bg-primary rounded-circle mw-100" alt="profile picture">
                     </div>
                 </div>
             </div>
@@ -48,6 +48,13 @@
             <div class="row py-5">
                 <div class="col-md-6">
                     <div class="experience-item py-4">
+                        <h5 class="fs-5 text-primary">Freelance</h5>
+                        <h5 class="fs-3">Python Developer</h5>
+                        <p class="text-muted">Present</p>
+                        <p>Custom applications for private clients.</p>
+                    </div>
+
+                    <div class="experience-item py-4">
                         <h5 class="fs-5 text-primary">National University of La Plata (UNLP)</h5>
                         <h5 class="fs-3">University Programmer Analyst</h5>
                         <p class="text-muted">Graduated in 2022</p>
@@ -64,13 +71,15 @@
                     <div class="experience-item py-4">
                         <h5 class="fs-5 text-primary">Mobiuspace</h5>
                         <h5 class="fs-3">Content Operations Analyst</h5>
-                        <p class="text-muted">From 2019 to 2021</p>
+                        <p class="text-muted">From 2019 to 2022</p>
                         <p>Content management for different multimedia applications (Zapee, Snaptube and Lark Player).</p>
                         <ul>
-                            <li>Sending push notifications</li>
-                            <li>Content management and upload</li>
-                            <li>Weekly analysis of consumption trends</li>
+                            <li>Distributed work environment</li>
+                            <li>Collaboration with colleagues from different countries</li>
                             <li>Remote work with daily meetings</li>
+                            <li>Python scripts to automate tasks</li>
+                            <li>Content management and push notifications</li>
+                            <li>Weekly analysis of consumption trends</li>
                         </ul>
                     </div>
                 </div>
@@ -135,7 +144,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="text-center">
-                        <h2 class="card-title text-black fs-3">Artesian</h2>
+                        <h2 class="card-title text-black fs-3">Artesian (factory control)</h2>
                     </div>
                     <div class="card project-card shadow-lg rounded-20">
                         <div class="discolored-img">    
@@ -144,26 +153,87 @@
                         <div class="colored-img">
                             <img src="img/artesian-project/card-cover-1.jpg" class="card-img-top rounded-20" alt="Ice-cream">
                         </div>
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
                     </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>hola</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+
+                    <!-- Modal start -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Artesian (factory control)</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="img/artesian-project/screenshot-1.PNG" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/artesian-project/screenshot-2.PNG" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/artesian-project/screenshot-3.PNG" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/artesian-project/screenshot-4.PNG" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="row row-cols-2 row-cols-md-3">
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Platform</div>
+                                            <div class="fs-5 fw-bold">Desktop</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Language</div>
+                                            <div class="fs-5 fw-bold">Python</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Framework</div>
+                                            <div class="fs-5 fw-bold">Tkinter</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Database</div>
+                                            <div class="fs-5 fw-bold">SQLite (local)</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h3>Description</h3>
+                                        <p>This is a desktop application for managing a local ice cream factory.
+                                            The complete system works as follows: 
+                                        </p>
+                                        <ul>
+                                            <li>The user can manually add ice cream flavours, with their respective identification number and legal number (denoted as RNPA).</li>
+                                            <li>The system is connected via RS-232 to a scale, on which the user can place the recently produced ice cream buckets.</li>
+                                            <li>From there, all that remains is to select the flavor to log the bucket into the system. At the same time, it prints the respective label with all the information of the bucket.</li>  
+                                            <li>The label has information on the flavor, weight, legal codes, production date, expiration date and a barcode (so the bucket can be scanned later).</li>
+                                            <li>The label is printed on a sticker and placed on the bucket.</li>
+                                            <li>This bucket is stored into the industrial fridge and  is already recorded into the system so the user can manage their stock more efficiently.</li>
+                                        </ul>
+                                        <p>The user can export this data to excel and generate reports and analysis.</p>
+                                        <p>When the user wants to send a batch of buckets to the sales branch, it is necessary to scan the desired buckets to ship and generate the dispatch list. All those selected buckets will now be tagged as "Shipped" and the dispatch list will be generated in PDF format.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal end -->
                 </div>
             </div>
         </div>
