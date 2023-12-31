@@ -15,3 +15,8 @@
 .rounded-20 {
     border-radius: 20px;
 }
+
+.logo-small{
+    height: 50px;
+    width: 50px;
+}

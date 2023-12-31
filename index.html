@@ -60,8 +60,9 @@
                 <div class="fs-5 my-5 text-center">
                     I'm currently open to <b>freelancing</b>, an <b>entry-level job in QA</b> or any <b>position related to my experience</b>.
                 </div>
-
             </div>
+
+            <hr>
 
             <div class="row py-5">
                 <div class="col-md-6">
@@ -168,23 +169,31 @@
                     <h2 class="fs-2 fw-bold mb-5">Projects</h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-3 justify-content-center">
                 <div class="col">
-                    <div class="text-center">
-                        <h2 class="card-title text-black fs-3">Artesian</h2>
-                    </div>
-                    <div class="card project-card shadow-lg rounded-20">
-                        <div class="discolored-img">    
-                            <img src="img/artesian-project/card-cover-1-bw.jpg" class="card-img-top rounded-20" alt="Ice-cream">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="card-title fs-4 mb-2">
+                                    <img src="img/artesian-project/logo.jpg" class="rounded-circle logo-small me-3" alt="Artesian Logo">
+                                    Artesian
+                                </div>
+                            </div>
+                            <div class="card-text mb-2">
+                                Desktop application for an Ice-Cream factory.
+                                <br>It is used to label products (ice cream buckets), manage their stock and ship them.
+                            </div>
+                            <div class="card-text mb-2">
+                                Stack: Python, Tkinter, SQLite, SQLAlchemy.
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#artesianModal">Details</a>
+                            </div>
                         </div>
-                        <div class="colored-img">
-                            <img src="img/artesian-project/card-cover-1.jpg" class="card-img-top rounded-20" alt="Ice-cream">
-                        </div>
-                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
                     </div>
 
                     <!-- Modal start -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="artesianModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -277,25 +286,33 @@
                 </div>
 
                 <div class="col">
-                    <div class="text-center">
-                        <h2 class="card-title text-black fs-3">AutosArg</h2>
-                    </div>
-                    <div class="card project-card shadow-lg rounded-20">
-                        <div class="discolored-img">    
-                            <img src="img/artesian-project/card-cover-1-bw.jpg" class="card-img-top rounded-20" alt="Ice-cream">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="card-title fs-4 mb-2">
+                                    <img src="img/autosarg-project/logo.png" class="rounded-circle logo-small me-3" alt="AutosArg Logo">
+                                    AutosArg
+                                </div>
+                            </div>
+                            <div class="card-text mb-2">
+                                Website for buying and selling used cars.
+                                <br>Uses car make-model database to fill each listing's car info.
+                            </div>
+                            <div class="card-text mb-2">
+                                Stack: Python, Django, PostgreSQL, Bootstrap 5.
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#autosargModal">Details</a>
+                            </div>
                         </div>
-                        <div class="colored-img">
-                            <img src="img/artesian-project/card-cover-1.jpg" class="card-img-top rounded-20" alt="Ice-cream">
-                        </div>
-                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#autosargmodal"></a>
                     </div>
 
                     <!-- Modal start -->
-                    <div class="modal fade" id="autosargmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="autosargModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Artesian (factory control)</h1>
+                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">AutosArg</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -329,6 +346,100 @@
                                     </div>
                                     <hr>
                         
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end -->
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="card-title fs-4 mb-2">
+                                    <img src="img/prevention-project/unlp-info-logo.jpg" class="rounded-circle logo-small me-3" alt="">
+                                    Flood Prevention
+                                </div>
+                            </div>
+                            <div class="card-text mb-2">
+                                Website focused on flood awareness and prevention in the city of La Plata, as well as evacuation plans in case of emergency.
+                            </div>
+                            <div class="card-text mb-2">
+                                Stack: Python, Flask, MySQL, SQLAlchemy, Bootstrap 5.
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#floodpreventionModal">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal start -->
+                    <div class="modal fade" id="floodpreventionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Flood Prevention</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="mb-2">
+                                            The flooding of the City of La Plata occurred in April 2013. With more than 400 mm of rain that accumulated in just 4 hours, the drainage systems were not enough... Unfortunately, human lives were lost and the damage caused in the city were huge.
+                                        </div>
+                                        <div class="mb-2">
+                                            This web page was part of the subject "Software Project". The main objective is to prevent and raise awareness about floods.
+                                            <br>
+                                            Modules:
+                                            <ul>
+                                                <li>Meeting points: To gather evacuees in case of emergency and provide help.</li>
+                                                <li>Evacuation routes: For efficient evacuation.</li>
+                                                <li>Flood zones: To inform residents so that they can be avoided.</li>
+                                                <li>Complaints: Users can report clogged sewers, garbage dumps or any incident that obstructs proper drainage.</li>
+                                            </ul>    
+                                        </div>
+                                        <div class="mb-2">
+                                            It is a web page composed of two applications: one private for management and another public for access by end users (connected to the first through API endpoints).
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row row-cols-2 row-cols-md-3">
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Platform</div>
+                                            <div class="fs-5 fw-bold">Web</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Language</div>
+                                            <div class="fs-5 fw-bold">Python</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Frameworks</div>
+                                            <div class="fs-5 fw-bold">Flask, Bootstrap 5</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">Database</div>
+                                            <div class="fs-5 fw-bold">MariaDB</div>
+                                        </div>
+                                        <div class="col mt-3">
+                                            <div class="text-muted">ORM</div>
+                                            <div class="fs-5 fw-bold">SQLAlchemy</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    
+                                    <div class="fs-4 my-4">Private app</div>
+                                    <div class="ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NcpXtwGzj6k?si=gbiPUGhBbCmEOM3g%vq=1080" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
+
+                                    <div class="fs-4 my-4">Public app</div>
+                                    <div class="ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OLv_O3yVyzs?si=z5i0pD5iYkNhAzy1%vq=1080" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
+                                                            
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -389,11 +500,13 @@
     </section>
     <!-- Contact section end -->
     
-    <hr>
+
 
     <!-- Footer component start -->
     <footer>
-        <p class="text-center text-muted m-5">Lautaro Oleastro 2023 ©</p>
+        <div class="bg-light p-5">
+            <p class="text-center text-muted">Lautaro Oleastro 2023 ©</p>
+        </div>
     </footer>
     <!-- Footer component end -->
 
