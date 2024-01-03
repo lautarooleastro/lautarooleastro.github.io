@@ -20,3 +20,22 @@
     height: 50px;
     width: 50px;
 }
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .1s ease;
+}
+
+#spinnerPhoto{
+    height: 28rem;
+    width: 28rem;
+}
+
+.fade-out-animation {
+    opacity: 0;
+    visibility: hidden;
+}
