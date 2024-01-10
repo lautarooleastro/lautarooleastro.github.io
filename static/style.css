@@ -80,5 +80,5 @@
     position: fixed;
     top: 0px;
     display: none;
-    z-index: 9999;
+    z-index: 1;
 }
