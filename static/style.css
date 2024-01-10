@@ -75,3 +75,10 @@
 .skill-icon {
     height: 38px;
 }
+
+#back-to-top-container {
+    position: fixed;
+    top: 0px;
+    display: none;
+    z-index: 9999;
+}

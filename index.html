@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+
     <div id="loadingScreen" class="bg-white">
         <div class="container-lg vh-100 d-flex flex-column align-items-center fixed-top">
             <div class="row w-100 flex-grow-1 align-items-center">
@@ -42,7 +43,7 @@
                 </div>
     
             </div>
-            <div class="row w-100 mb-4">
+            <div class="row w-100 my-5">
                 <div class="col text-center">
                     <div class="placeholder-glow">
                         <span class="placeholder col-1 bg-primary fs-3"></span>
@@ -61,23 +62,27 @@
                         <h5 class="fs-5 my-1 text-muted">Hello I'm</h5>
                         <h1 class="fs-1 my-1 text-uppercase">Lautaro Oleastro</h1>
                         <h3 class="fs-3 my-1 text-primary fw-bold">Software Developer</h3>
-                        <ul class="nav">
-                            <li class="nav-item me-2">
-                                <a href="https://github.com/lautarooleastro" class="nav-link px-2 text-body-secondary fs-2" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a href="https://www.linkedin.com/in/lautarooleastro/" class="nav-link px-2 text-body-secondary fs-2" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a href="mailto: lauchaoleastro1@gmail.com" class="nav-link px-2 text-body-secondary fs-2">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </a>
-                            </li>
-                        </ul>
+
+                        <nav class="navbar navbar-expand py-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item me-2">
+                                    <a href="https://github.com/lautarooleastro" class="nav-link px-2 fs-2" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item me-2">
+                                    <a href="https://www.linkedin.com/in/lautarooleastro/" class="nav-link px-2 fs-2" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item me-2">
+                                    <a href="mailto: lauchaoleastro1@gmail.com" class="nav-link px-2 fs-2">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-first p-5 align-items-center">
@@ -97,6 +102,12 @@
         </div>
     </section>
     <!-- Home section end -->
+
+    <div id="back-to-top-container" class="w-100 text-center">
+        <a href="#home">
+            <i id="btn-back-to-top" class="bi bi-chevron-compact-up" style="font-size: 4rem;"></i>
+        </a>
+    </div>
 
     <!-- About section start -->
     <section id="about">
@@ -263,8 +274,8 @@
                         </div>
                         <div class="fs-3">Python Developer</div>
                         <p class="text-muted">From 2023</p>
-                        <div>I used <b>Django</b> for personal projects and tutorial pages.</div>
                         <div>Developed a desktop application for a private client using <b>Tkinter</b>.</div>
+                        <div>I used <b>Django</b> for personal projects and tutorial pages.</div>
                     </div>
     
                     <div class="experience-item py-4">
@@ -623,66 +634,66 @@
     <!-- Contact section start -->
     <section id="contact">
 
-        <div class="container-lg bg-white p-5">
-            <h2 class="fs-2 mt-2 mb-5 text-center">Contact</h2>
+        <div class="container-lg vh-100 bg-white d-flex align-items-center">
+            <div class="col">
+                <h2 class="fs-2 mt-2 mb-5 text-center">Contact</h2>
 
-            <form action="https://formcarry.com/s/tpS9VHy0ZS" method="POST" enctype="multipart/form-data">
+                <form action="https://formcarry.com/s/tpS9VHy0ZS" method="POST" enctype="multipart/form-data">
 
-                <div class="row">
-                    <div class="col-md-3 col-sm-2"></div>
-                    <div class="col-md-6 col-sm-8">
-                        <div class="justify-content-center">
-                            <div class="mb-3">
-                                <label for="nameInput" class="form-label">Name</label>
-                                <input name="name" type="text" id="nameInput" class="form-control" placeholder="Name" autocomplete="family-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="emailInput" class="form-label">Email address</label>
-                                <input name="email" type="email" id="emailInput" class="form-control" placeholder="adress@example.com" autocomplete="email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="messageInput" class="form-label">Example textarea</label>
-                                <textarea name="message" class="form-control" id="messageInput" rows="5" autocomplete="off"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <button class="form-control btn btn-lg btn-primary">Submit</button>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-2"></div>
+                        <div class="col-md-6 col-sm-8">
+                            <div class="justify-content-center">
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label">Name</label>
+                                    <input name="name" type="text" id="nameInput" class="form-control" placeholder="Name" autocomplete="family-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label">Email address</label>
+                                    <input name="email" type="email" id="emailInput" class="form-control" placeholder="adress@example.com" autocomplete="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageInput" class="form-label">Example textarea</label>
+                                    <textarea name="message" class="form-control" id="messageInput" rows="5" autocomplete="off"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="form-control btn btn-lg btn-primary">Send</button>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-2"></div>
                     </div>
-                    <div class="col-md-3 col-sm-2"></div>
-                </div>
-            </form>
+                </form>
+            </div>
 
         </div>
     </section>
     <!-- Contact section end -->
     
-
-
     <!-- Footer component start -->
     <footer>
         <div class="bg-light p-5">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
-                        <i class="bi bi-github"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
-                        <i class="bi bi-envelope"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-            
-            <hr>
-            
-            <div class="row">
+            <nav class="navbar navbar-expand justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-2">
+                        <a href="https://github.com/lautarooleastro" class="nav-link px-2 fs-2" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="https://www.linkedin.com/in/lautarooleastro/" class="nav-link px-2 fs-2" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="mailto: lauchaoleastro1@gmail.com" class="nav-link px-2 fs-2">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                        
+            <div class="row pt-5">
                 <p class="text-center text-muted">Lautaro Oleastro 2024 ©</p>
             </div>
         </div>
