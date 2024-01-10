@@ -28,7 +28,9 @@
                         <span class="placeholder col-6 bg-primary"></span>
                     </div>
                     <div class="placeholder-glow">
-                        <span class="placeholder col-5"></span>
+                        <span class="placeholder col-1 fs-2 me-1 mt-1"></span>
+                        <span class="placeholder col-1 fs-2 me-1 mt-1"></span>
+                        <span class="placeholder col-1 fs-2 me-1 mt-1"></span>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-first p-5 align-items-center">
@@ -43,7 +45,7 @@
             <div class="row w-100 mb-4">
                 <div class="col text-center">
                     <div class="placeholder-glow">
-                        <span class="placeholder col-1 bg-primary"></span>
+                        <span class="placeholder col-1 bg-primary fs-3"></span>
                     </div>
                 </div>
             </div>
@@ -59,7 +61,23 @@
                         <h5 class="fs-5 my-1 text-muted">Hello I'm</h5>
                         <h1 class="fs-1 my-1 text-uppercase">Lautaro Oleastro</h1>
                         <h3 class="fs-3 my-1 text-primary fw-bold">Software Developer</h3>
-                        <div>Based in Buenos Aires, Argentina.</div>
+                        <ul class="nav">
+                            <li class="nav-item me-2">
+                                <a href="https://github.com/lautarooleastro" class="nav-link px-2 text-body-secondary fs-2" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="https://www.linkedin.com/in/lautarooleastro/" class="nav-link px-2 text-body-secondary fs-2" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="mailto: lauchaoleastro1@gmail.com" class="nav-link px-2 text-body-secondary fs-2">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-first p-5 align-items-center">
@@ -81,10 +99,10 @@
     <!-- Home section end -->
 
     <!-- About section start -->
-    <section id="about" class="">
-        <div class="container d-flex flex-column align-items-center my-4">
+    <section id="about">
+        <div class="container vh-100 d-flex align-items-center my-4">
             <div class="row flex-grow-1 justify-content-center py-4">
-                <div class="col-md-6">
+                <div class="col-md-6 align-items-center">
                     <div class="fs-2 text-center">About me</div>
                     <div class="fs-5 my-4 text-center">
                         Passionate for technology from an early age, I decided to study <b>Computer Science</b> in the <b>National University of La Plata</b>,
@@ -164,10 +182,30 @@
                         <div class="col px-4 py-2">
                             <div class="row border">
                                 <div class="col-auto p-2 border bg-white">
+                                    <img src="img/icons/sql.png" class="skill-icon" alt="SQL icon">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center" style="background-color: #00bdf2;">
+                                    <span class="fs-5 align-middle text-white">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-4 py-2">
+                            <div class="row border">
+                                <div class="col-auto p-2 border bg-white">
                                     <img src="img/icons/css.png" class="skill-icon" alt="CSS icon">
                                 </div>
                                 <div class="col d-flex align-items-center justify-content-center" style="background-color: #0d73b7;">
                                     <span class="fs-5 align-middle text-white">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-4 py-2">
+                            <div class="row border">
+                                <div class="col-auto p-2 border bg-white">
+                                    <img src="img/icons/ttk-bootstrap.png" class="skill-icon" alt="ttk bootstrap icon">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center" style="background-color: #555555;">
+                                    <span class="fs-5 align-middle text-white">Tkinter (Ttk)</span>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +254,7 @@
         <div class="container">
             <div class="row justify-content-center py-5">
                 <div class="col-auto">
-                    <div class="fs-2 text-center">Experience</div>
+                    <div class="fs-2 text-center mb-4">Experience and education</div>
     
                     <div class="experience-item py-4">
                         <div class="fs-5 text-primary">
@@ -572,13 +610,15 @@
     </section>
     <!-- Projects section end -->
 
-    <div class="bg-primary">
-        <p class="fs-5 text-white text-center pt-5">Do you have a project?</p>
-        <h1 class="fs-1 text-white text-center m-4">I am available for freelance work!</h1>
-        <div class="text-center pt-2 pb-5">
-            <a href="#contact" class="btn btn-lg btn-light text-primary">Let's talk</a>
+    <section id="banner">
+        <div class="bg-primary py-5">
+            <p class="fs-5 text-white text-center mt-5">Do you have a project?</p>
+            <h1 class="fs-1 text-white text-center m-4">I am available for freelance work!</h1>
+            <div class="text-center pt-2 mb-5">
+                <a href="#contact" class="btn btn-lg btn-light text-primary">Let's talk</a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contact section start -->
     <section id="contact">
@@ -622,7 +662,29 @@
     <!-- Footer component start -->
     <footer>
         <div class="bg-light p-5">
-            <p class="text-center text-muted">Lautaro Oleastro 2024 ©</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary fs-1">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <hr>
+            
+            <div class="row">
+                <p class="text-center text-muted">Lautaro Oleastro 2024 ©</p>
+            </div>
         </div>
     </footer>
     <!-- Footer component end -->
